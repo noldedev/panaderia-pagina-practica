@@ -1,0 +1,561 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  background-color: #ebe7de;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: #000;
+  font-size: 1.6rem;
+  line-height: 2;
+  margin: 0;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: "Roboto Slab", serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+.header {
+  width: 100%;
+  min-height: 50vh;
+  position: relative;
+  background-image: url(../img/panaderia-header1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.7;
+  background-color: #000;
+}
+
+/** Nosotros **/
+.header__nosotros {
+  background-image: url(../img/nosotros1.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+/** Productos **/
+.header__productos {
+  background-image: url(../img/producto.jpg);
+}
+
+/** Contacto  **/
+.header__contacto{
+  background-image: url(../img/contacto.jpg);
+  background-position: center bottom top;
+}
+
+.titulo h1 {
+  background: rgb(100, 159, 159);
+  background: linear-gradient(
+    90deg,
+    rgba(100, 159, 159, 1) 1%,
+    rgba(200, 197, 216, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 4.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.padre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+  position: relative;
+}
+.navegacion .navegacion__active {
+  color: #f1973c;
+}
+
+.navegacion ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  gap: 5rem;
+}
+.navegacion li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Roboto Slab", serif;
+  transition: color 0.3s ease;
+}
+
+.navegacion :hover {
+  color: #f1973c;
+}
+
+.frase {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 4rem;
+  position: relative;
+  margin-top: 5rem;
+  color: #cbcb2d;
+  font-family: "Roboto Slab", serif;
+}
+
+.seccion-contenedor {
+  background-color: #fff;
+  padding: 4rem;
+  margin-top: 2rem;
+}
+
+.seccion-contenedor h2 {
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.cardConte {
+  background-color: #c78650;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px rgba(138, 138, 138, 0.8);
+  height: 45rem;
+  width: 45rem;
+  max-width: 100%;
+}
+.cardConte img {
+  transition: transform 1s ease;
+  height: 24rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cardConte .cardTitle {
+  text-align: center;
+  margin: 0;
+  padding: 0.4rem 0.4rem;
+}
+
+.cardConte .cardParafo {
+  padding: 1rem;
+  margin: 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.cardConte img:hover {
+  transform: scaleX(1.1);
+}
+
+.grid-hijo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.grid-img img {
+  width: 60rem;
+  height: 34rem;
+}
+
+.grid-hijo .grid-img {
+  grid-column: 2/3;
+}
+
+.grid-hijo .grid-texto {
+  grid-row: 3 / 1;
+}
+
+.grid-hijo2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.grid-img img .grid-hijo2,
+.grid-img img {
+  box-shadow: 15px 15px 1px 0px rgba(171, 170, 179, 0.73);
+}
+
+.grid-title {
+  text-transform: uppercase;
+  color: #6b0a0a;
+}
+
+.grid-h3 {
+  color: #c5b54b;
+  position: relative;
+  border-left: 3px solid brown;
+  padding-left: 0.4rem;
+}
+/** Footer **/
+
+.footer {
+  background-color: #181818;
+  color: #fff;
+}
+
+.footer .footer__title {
+  font-size: 3rem;
+  padding-top: 2rem;
+  text-align: left;
+}
+
+.footer .footer__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem;
+}
+
+.footer .footer__icons {
+  width: 45rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.footer__icons .footer__icon {
+  font-size: 3rem;
+  transition: color 1s, transform 1s ease;
+}
+
+.footer__icons .footer__icon:nth-child(1) {
+  color: #4e71ba;
+}
+.footer__icons .footer__icon:nth-child(2) {
+  color: #54cc61;
+}
+.footer__icons .footer__icon:nth-child(3) {
+  color: #a70c9e;
+}
+.footer__icons .footer__icon:nth-child(4) {
+  color: #1b99ee;
+}
+
+.footer__icons .footer__icon:hover {
+  transform: scale(1.1);
+}
+
+.footer .footer__texto {
+  color: #fff;
+  text-align: left;
+}
+.footer .footer__texto--cierre {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+/** Nosotros **/
+.seccion__grid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.seccion__img img{
+  border-radius: 50%;
+  width: 30rem;
+  height: 25rem;
+}
+.seccion__texto{
+  flex: 1;
+}
+
+.seccion__title{
+  letter-spacing: 1rem;
+  color: #1b99ee;
+  font-size: 4rem;
+}
+
+.seccion__parrafo::first-letter{
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #6b0a0a;
+}
+
+.nosotros__contexto{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nosotros__contexto .nosotros__parrafo--dos::first-letter{
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #6b0a0a;
+}
+
+/** Productos **/
+.productos__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(200px, auto);
+  gap: 1rem;
+}
+
+.productos {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.producto-1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.producto-2 {
+  grid-row: span 2;
+}
+.producto-5 {
+  grid-column: span 2;
+}
+.producto-8 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.producto-9{
+  grid-column: span 2;
+}
+.producto-10 {
+  grid-column: span 4;
+  height: 40rem;
+}
+
+.productos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.productos:hover {
+  transform: translateY(-5px);
+}
+
+.productos:hover {
+  transform: translateY(-5px);
+}
+
+
+/** Formulario **/
+.seccion__title--two{
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  color: #1b99ee;
+}
+
+.formulario__grid{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.formulario{
+  width: 40rem;
+  font-size: 2.88rem;
+  max-width: 100%;
+}
+.campo label{
+  display: block;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.campo input{
+  width: 100%;
+  padding: 1rem;
+  border: 0.25rem solid #c78650;
+  outline: none;
+  margin-bottom: 1rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.boton{
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.85rem;
+  font-family: "Roboto Slab", serif;
+  border: none;
+  outline: none;
+  background-color: #c78650;
+  transition:  background-color 1s, color 1s ease;
+}
+
+.boton:hover{
+  background-color: #4e71ba;
+  color: #fff;
+}
+
+.formulario__imagen{
+  width: 45rem;
+  height: 55rem;
+  max-width: 100%;
+  margin-left: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario__imagen img{
+  height: 47.5rem;
+  border-radius: 3rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .padre{
+    display: flex;
+    flex-direction: column;
+  }
+  .frase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+  }
+}
+
+
+@media only screen and (max-width: 760px) {
+  .titulo h1 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .padre {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .navegacion ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .frase {
+    text-align: center;
+    margin-top: 0;
+    padding: 0 2rem;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .cardTitle {
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0;
+  }
+  .cardParafo {
+    font-size: 1.8rem;
+    margin: 0;
+  }
+  .grid-hijo,
+  .grid-hijo2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer__flex {
+    flex-direction: column;
+  }
+
+  .footer__title{
+    text-align: center;
+  }
+  /** Nosotros **/
+  .seccion__grid{
+    flex-direction: column;
+  }
+  .nosotros__contexto{
+    flex-direction: column-reverse;
+  }
+
+
+  /** Productos **/
+  .productos__grid{
+    display: flex;
+    flex-direction: column;
+  }
+  .producto-10 {
+    grid-column: span 4;
+    height: auto;
+  }
+  /** Contacto **/
+  .seccion__title--two{
+    font-size: 3rem;
+  }
+  .formulario__grid{
+   display: flex;
+   flex-direction: column;
+  }
+  .formulario__imagen{
+    margin-left: 0;
+  }
+  .boton{
+    margin-bottom: 5rem;
+  }
+}
+
+@media  only screen and (max-width: 367px) {
+  .cardConte .cardParafo{
+    font-size: 1rem;
+  }
+  .seccion__title{
+    font-size: 3rem;
+  }
+}
